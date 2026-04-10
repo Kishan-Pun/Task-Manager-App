@@ -28,6 +28,7 @@ function App() {
 
   const addTask = async (title) => {
     try {
+      setError("");
       await axios.post(API, { title });
       fetchTasks();
     } catch (err) {
@@ -37,6 +38,7 @@ function App() {
 
   const toggleTask = async (id) => {
     try {
+      setError("");
       await axios.patch(`${API}/${id}`);
       fetchTasks();
     } catch (err) {
@@ -46,6 +48,7 @@ function App() {
 
   const deleteTask = async (id) => {
     try {
+      setError("");
       await axios.delete(`${API}/${id}`);
       fetchTasks();
     } catch (err) {
