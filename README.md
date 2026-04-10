@@ -42,3 +42,9 @@ npm run dev
 - Kept the UI simple as per assignment instructions
 - Focused on clean structure and working API integration
 - Used PostgreSQL with Prisma for data persistence
+
+## Trade-offs & Assumptions
+
+- Used PostgreSQL with Prisma for persistence instead of in-memory storage
+- Focused on clean architecture and API design over UI styling
+- Kept the application simple as per assignment scope (1–2 hours)
